@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: linear-gradient(90deg, #007bff, #00bcd4);
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background: #ffffffaa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-in-out;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background: linear-gradient(90deg, #007bff, #00bcd4);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #0097a7);
+    transform: scale(1.05);
+}
+
+.blog-card {
+    background: #fff8f0;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.comments-section {
+    margin-top: 10px;
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comments-list {
+    margin-bottom: 10px;
+}
+
+.comment {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.comment-form input {
+    width: 80%;
+    display: inline-block;
+}
+
+.comment-form button {
+    width: 18%;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}

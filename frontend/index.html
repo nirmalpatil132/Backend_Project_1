@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Blog Platform</h1>
+
+    <div class="container">
+        <section>
+            <h2>Register</h2>
+            <input id="regUsername" placeholder="Username">
+            <input id="regEmail" placeholder="Email">
+            <input id="regPassword" type="password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </section>
+
+        <section>
+            <h2>Login</h2>
+            <input id="loginEmail" placeholder="Email">
+            <input id="loginPassword" type="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </section>
+
+        <section>
+            <h2>Create Blog</h2>
+            <input id="blogTitle" placeholder="Blog Title">
+            <textarea id="blogContent" placeholder="Blog Content"></textarea>
+            <button onclick="createBlog()">Create Blog</button>
+        </section>
+
+        <section>
+            <h2>All Blogs</h2>
+            <div id="blogs"></div>
+        </section>
+        
+        <template id="blogTemplate">
+            <div class="blog-card">
+                <h3 class="blog-title"></h3>
+                <p class="blog-content"></p>
+        
+                <div class="comments-section">
+                    <h4>Comments</h4>
+                    <div class="comments-list"></div>
+        
+                    <div class="comment-form" style="display:none;">
+                        <input type="text" class="comment-input" placeholder="Write a comment...">
+                        <button class="comment-btn">Post Comment</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
